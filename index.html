@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт web-студії "Web-DECO"</title>
         <!-- =================== JAVASCRIPT ==================-->
+        <script src="js/clock1.js"></script>
         <script type="text/javascript">
             function send()
             {
@@ -40,11 +41,17 @@
         font-size: 2em;
     }
 </style>
+<script>
+    window.onload=function()
+    {
+        setInterval(clockPainting, 1000);   
+    }
+</script>
 </head>
 <body background="images/bg.jpg">
     <table border="1" align="center" cellpadding="10">
         <tr>
-            <td colspan="2" height = "150" align="right"><font size="5"><h1>Сайт Web-студії "Web-DECO"</h1></font></td>gh
+            <td colspan="2" height = "150" align="right"><font size="5"><h1>Сайт Web-студії "Web-DECO"</h1></font></td>
         </tr>
         <tr>
     <table border="1" align="center" cellpadding="10">
@@ -54,6 +61,7 @@
         <tr>
             <td colspan="2"><td colspan="2" height = "150" align="right"><font size="5"><h1>Сайт Web-студії "Web-DECO"</h1></font></td>
         </tr>
+        
         <tr>
             <td colspan="2">Горизонтальне Меню</td>
             <td colspan="2">
@@ -72,6 +80,7 @@
                 <tr>
                     <td width="30%" valign="top">Меню зліва</td>
                     <td width="30%" valign="top">
+                        <centre><canvas id="canvas" height="120" width="120"></canvas></centre>
                         <font size="5" color="navy"><h2>Новини</h2></font>
                         <font size="5"> 
                             <ui>
